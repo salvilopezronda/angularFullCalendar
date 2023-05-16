@@ -129,11 +129,11 @@ export class AppComponent implements OnInit {
   }
   mapTareaToEvent(tarea: Tarea): any {
     const objeto = {
-      title: tarea.titulo +'\n // \n' +tarea.descripcion,
+      title: tarea.titulo,
       start: tarea.fecha,
       description: tarea.descripcion, // Agrega la descripción al objeto de propiedades extendidas
       backgroundColor: this.getColorCaja(tarea.estado),
-      eventTextColor: this.getColorTitulo(tarea.tipologia), // Agrega la clase CSS personalizada
+      textColor: this.getColorTitulo(tarea.tipologia), // Agrega la clase CSS personalizada
     };
     return objeto;
   }
