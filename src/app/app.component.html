@@ -7,7 +7,7 @@
       <ul>
         <li *ngFor='let event of currentEvents'>
           <b>{{event.startStr | date: 'dd/MM/yyyy HH:MM:ss'}}</b>
-          <i>{{event.title}} </i>
+          <i>{{event.title}}<br/> - {{event.display}}</i>
         </li>
       </ul>
     </div>

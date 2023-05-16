@@ -131,7 +131,7 @@ export class AppComponent implements OnInit {
     const objeto = {
       title: tarea.titulo,
       start: tarea.fecha,
-      description: tarea.descripcion, // Agrega la descripción al objeto de propiedades extendidas
+      display: tarea.descripcion, // Agrega la descripción al objeto de propiedades extendidas
       backgroundColor: this.getColorCaja(tarea.estado),
       textColor: this.getColorTitulo(tarea.tipologia), // Agrega la clase CSS personalizada
     };
