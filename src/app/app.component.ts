@@ -129,7 +129,7 @@ export class AppComponent implements OnInit {
   }
   mapTareaToEvent(tarea: Tarea): any {
     const objeto = {
-      title: tarea.titulo,
+      title: tarea.titulo + ' \n '+tarea.descripcion,
       start: tarea.fecha,
       description: tarea.descripcion, // Agrega la descripción al objeto de propiedades extendidas
       backgroundColor: this.getColorCaja(tarea.estado),
