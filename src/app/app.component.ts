@@ -139,7 +139,7 @@ export class AppComponent implements OnInit {
   }
 
   handleDateSelect(selectInfo: DateSelectArg) {
-    const title = prompt('Please enter a new title for your event');
+    const title = prompt('Introduxca un nuevo titulo para el evento');
     const calendarApi = selectInfo.view.calendar;
 
     calendarApi.unselect(); // clear date selection
@@ -156,7 +156,7 @@ export class AppComponent implements OnInit {
   }
 
   handleEventClick(clickInfo: EventClickArg) {
-    if (confirm(`Are you sure you want to delete the event '${clickInfo.event.title}'`)) {
+    if (confirm(`Estas seguro que quiere borrar el evento  '${clickInfo.event.title}'`)) {
       clickInfo.event.remove();
     }
   }
